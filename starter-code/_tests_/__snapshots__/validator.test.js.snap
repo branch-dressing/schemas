@@ -3,3 +3,7 @@
 exports[`validators can take an object and returns a fields value 1`] = `"Cannot cast >>null<< to String"`;
 
 exports[`validators can take an object and returns a fields value 2`] = `"Cannot cast >>undefined<< to String"`;
+
+exports[`validators can take an object and returns a fields value 3`] = `"Cannot cast >>Twelve<< to Number"`;
+
+exports[`validators can take an object and returns a fields value 4`] = `"Cannot cast >>() => {}<< to Array"`;

@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1575414353525" clover="3.2.0">
-  <project timestamp="1575414353525" name="All files">
-    <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2" elements="13" coveredelements="13" complexity="0" loc="11" ncloc="11" packages="1" files="1" classes="1"/>
+<coverage generated="1575415955528" clover="3.2.0">
+  <project timestamp="1575415955529" name="All files">
+    <metrics statements="12" coveredstatements="12" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2" elements="18" coveredelements="18" complexity="0" loc="12" ncloc="12" packages="1" files="1" classes="1"/>
     <file name="Validator.js" path="/Users/joelpatrickdurham/alchemy/career-track/week-01/schemas/starter-code/lib/Validator.js">
-      <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <metrics statements="12" coveredstatements="12" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
       <line num="3" count="1" type="stmt"/>
       <line num="7" count="3" type="stmt"/>
       <line num="8" count="3" type="stmt"/>
       <line num="9" count="3" type="stmt"/>
-      <line num="13" count="7" type="stmt"/>
-      <line num="14" count="7" type="stmt"/>
-      <line num="15" count="5" type="stmt"/>
-      <line num="19" count="1" type="stmt"/>
-      <line num="24" count="1" type="stmt"/>
-      <line num="29" count="1" type="stmt"/>
-      <line num="34" count="1" type="stmt"/>
+      <line num="13" count="10" type="cond" truecount="4" falsecount="0"/>
+      <line num="14" count="9" type="stmt"/>
+      <line num="15" count="9" type="stmt"/>
+      <line num="16" count="5" type="stmt"/>
+      <line num="20" count="1" type="stmt"/>
+      <line num="25" count="1" type="stmt"/>
+      <line num="30" count="1" type="stmt"/>
+      <line num="35" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
