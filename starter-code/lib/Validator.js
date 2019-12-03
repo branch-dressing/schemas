@@ -26,7 +26,13 @@ const ageValidator = new Validator('age', {
     required: true
 });
 
+const arrayValidator = new Validator('favoriteToys', {
+    type: Array,
+    required: false
+});
+
 module.exports = {
     nameValidator,
-    ageValidator
+    ageValidator,
+    arrayValidator
 };

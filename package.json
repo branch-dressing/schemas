@@ -1,5 +1,5 @@
 {
-  "name": "TDD-witth-jest",
+  "name": "schemas",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -13,13 +13,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/joelpdurham/TDD-witth-jest.git"
+    "url": "git+https://github.com/joelpdurham/schemas.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/joelpdurham/TDD-witth-jest/issues"
+    "url": "https://github.com/joelpdurham/schemas/issues"
   },
-  "homepage": "https://github.com/joelpdurham/TDD-witth-jest#readme"
+  "homepage": "https://github.com/joelpdurham/schemas#readme"
 }

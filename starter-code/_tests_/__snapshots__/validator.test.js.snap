@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`validators can take an object and returns a fields value 1`] = `"Cannot cast >>null<< to String"`;
+
+exports[`validators can take an object and returns a fields value 2`] = `"Cannot cast >>undefined<< to String"`;
