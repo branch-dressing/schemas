@@ -1,5 +1,7 @@
 language: node_js
 node_js: node
+before_script:
+  - npm i eslint esm jsdom
 script:
-  - npm run lint
+  - npx eslint .
   - npm test
