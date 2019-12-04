@@ -9,9 +9,17 @@ class Schema {
 
     validate(object) {
         const validatedObject = {};
+        const errors = [];
         this.validators.forEach(validator => {
-            validatedObject[validator.objectKey] = validator.validate(object);
+            try {
+                validatedObject[validator.objectKey] = validator.validate(object);
+            } catch(error) {
+                errors.push(error);
+            }
         });
+        if(errors.length > 0) {
+            throw new Error (`invalid schema >>${errors}`);
+        }
         return validatedObject;
     }
 
