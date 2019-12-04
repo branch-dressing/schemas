@@ -10,6 +10,7 @@
     "eslintrc": "^1.0.6"
   },
   "scripts": {
+    "lint": "eslint **/*.js",
     "test": "jest --verbose --coverage",
     "test:watch": "npm run test -- --watch"
   },
