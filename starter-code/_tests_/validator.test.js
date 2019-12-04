@@ -60,7 +60,7 @@ describe('Schemas', () => {
             age: 39,
             favoriteToys: ['bone', 'chew', 'ball']
         });
-        // expect(schema.validate(almostDog)).toThrowErrorMatchingSnapshot();
+        //expect(schema.validate(almostDog)).toThrowErrorMatchingSnapshot();
         // expect(schema.validate(notDog)).toEqual({
         //     name: 'Josh',
         //     age: 39,
