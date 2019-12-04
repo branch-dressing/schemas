@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Schemas when given an object it validates and casts that object 1`] = `"invalid schema >>Error: Cannot cast >>() => {}<< to Array"`;
+
+exports[`Schemas when given an object it validates and casts that object 2`] = `"invalid schema >>Error: Cannot cast >>null<< to String,Error: Cannot cast >>Twelve<< to Number"`;
+
+exports[`Schemas when given an object it validates and casts that object 3`] = `"invalid schema >>Error: Cannot cast >>undefined<< to String,Error: Cannot cast >>undefined<< to Number"`;
+
+exports[`validators can take an object and returns a fields value 1`] = `"Cannot cast >>null<< to String"`;
+
+exports[`validators can take an object and returns a fields value 2`] = `"Cannot cast >>undefined<< to String"`;
+
+exports[`validators can take an object and returns a fields value 3`] = `"Cannot cast >>Twelve<< to Number"`;
+
+exports[`validators can take an object and returns a fields value 4`] = `"Cannot cast >>() => {}<< to Array"`;
