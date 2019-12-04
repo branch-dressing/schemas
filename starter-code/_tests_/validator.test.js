@@ -4,7 +4,8 @@ const {
     arrayValidator
 } = require('../lib/Validator.js');
 
-const {
+const { 
+    schema
 } = require('../lib/Schema.js');
 
 const dog = {
@@ -54,6 +55,10 @@ describe('validators', () => {
 
 describe('Schemas', () => {
     it('does something....', () => {
-        expect()
-    })
-})
+        expect(schema.validate(dog)).toEqual({
+            name: 'Josh',
+            age: 39,
+            favoriteToys: ['bone', 'chew', 'ball']
+        });
+    });
+});

@@ -35,5 +35,6 @@ const arrayValidator = new Validator('favoriteToys', {
 module.exports = {
     nameValidator,
     ageValidator,
-    arrayValidator
+    arrayValidator,
+    Validator
 };

@@ -1,11 +1,10 @@
-const Validator = require('./Validator.js');
+const { Validator } = require('./Validator.js');
 
 class Schema {
     constructor(bigObject) {
         this.bigObject = bigObject;
-        this.validators = Object.entries(bigObject.map(entry => {
-            return new Validator(entry[0], entry[1]);
-        }));
+        this.validators = Object.entries(bigObject)
+            .map(entry => new Validator(entry[0], entry[1]));
     }
 
     validate(object) {
@@ -18,4 +17,19 @@ class Schema {
 
 }
 
-module.exports = Schema;
+const schema = new Schema({
+    name: {
+        type: String,
+        required: true
+    }, 
+    age: {
+        type: Number,
+        required: true
+    },
+    favoriteToys: {
+        type: Array,
+        required: false
+    }
+});
+
+module.exports = { schema };
