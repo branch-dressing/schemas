@@ -6,7 +6,9 @@
   "dependencies": {
     "jest": "^24.9.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "eslintrc": "^1.0.6"
+  },
   "scripts": {
     "test": "jest --verbose --coverage",
     "test:watch": "npm run test -- --watch"
