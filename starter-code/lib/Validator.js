@@ -10,7 +10,7 @@ class Validator {
     }
 
     validate(object) {
-        if(!this.required && !object[this.objectKey]) return 'Not Required';
+        if(!this.required && !object[this.objectKey]) return null;
         const functionToCast = getCaster(this.type);
         const valueAtKey = functionToCast(object[this.objectKey]);
         return valueAtKey;

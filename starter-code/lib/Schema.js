@@ -20,6 +20,7 @@ class Schema {
         if(errors.length > 0) {
             throw new Error (`invalid schema >>${errors}`);
         }
+        console.log(validatedObject);
         return validatedObject;
     }
 
