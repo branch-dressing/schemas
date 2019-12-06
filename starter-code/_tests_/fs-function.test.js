@@ -1,13 +1,15 @@
 const fs = require('fs').promises;
 const {
     mkdirp,
-    writeJSON
+    writeJSON,
+    readJSON
 } = require('../lib/fs-function.js');
 
 jest.mock('fs', () => ({
     promises: {
         mkdir: jest.fn(() => Promise.resolve()),
-        writeFile: jest.fn(() => Promise.resolve())
+        writeFile: jest.fn(() => Promise.resolve()),
+        readFile: jest.fn(() => Promise.resolve('{"one":"one"}'))
     }
 }));
 
@@ -29,6 +31,14 @@ describe('fs-functions test', () => {
                     one: 'one',
                     two: 2
                 }));
+            });
+    });
+
+    it('will read a file', () => {
+        return readJSON('./some/example/test/file')
+            .then(json => {
+                expect(fs.readFile).toHaveBeenCalledWith('./some/example/test/file', 'utf8');
+                expect(json).toEqual({ 'one':'one' });
             });
     });
 });
