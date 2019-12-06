@@ -20,12 +20,12 @@ describe('fs-functions test', () => {
     });
 
     it('will write a file', () => {
-        return writeJSON('./some/example/test/dirs', {
+        return writeJSON('./some/example/test/file', {
             one: 'one',
             two: 2
         })
             .then(() => {
-                expect(fs.writeJSON).toHaveBeenCalledWith('./some/example/test/dirs', JSON.stringify({ 
+                expect(fs.writeFile).toHaveBeenCalledWith('./some/example/test/file', JSON.stringify({ 
                     one: 'one',
                     two: 2
                 }));
