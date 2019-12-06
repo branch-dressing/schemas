@@ -9,7 +9,7 @@ jest.mock('fs', () => ({
     }
 }));
 
-descirbe('fs-functions test', () => {
+describe('fs-functions test', () => {
     it('will make directory parents', () => {
         return mkdirp('./some/example/test/dirs')
             .then(() => {

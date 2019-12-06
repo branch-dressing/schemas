@@ -1,11 +1,9 @@
 const fs = require('fs').promises;
 
-function makedirp(path) {
-    fs.mkdir(path, { recursive: true }, (err) => {
-        if(err) throw err;
-    });
+function mkdirp(path) {
+    return fs.mkdir(path, { recursive: true });
 }
 
 module.exports = {
-    makedirp,
-}
+    mkdirp,
+};
